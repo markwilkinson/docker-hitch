@@ -37,7 +37,7 @@ WORKDIR /etc/hitch
 
 COPY docker-hitch-entrypoint /usr/local/bin/
 
-ENTRYPOINT ["docker-hitch-entrypoint"]
+ENTRYPOINT ["docker-hitch-entrypoint", "-L", "2"]
 
 EXPOSE 443
 
